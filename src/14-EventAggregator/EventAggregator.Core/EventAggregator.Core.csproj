@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Avalonia" Version="7.2.0.1428" />
+    <PackageReference Include="Prism.Unity.Avalonia" Version="7.2.0.1428" />
+  </ItemGroup>
+</Project>
