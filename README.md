@@ -1,2 +1,2 @@
 # Prism.Avalonia.Samples
-Some examples for Prism.Avalonia framwork.
+Some examples for Prism.Avalonia framework.
