@@ -1,0 +1,27 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:prism="http://prismlibrary.com/"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="UsingCompositeCommands.Views.MainWindow"
+      	Height="350" Width="525"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="Using Composite Commands Prism Avalonia">
+  <!--<Window.Resources>
+    <Style TargetType="TabItem">
+      <Setter Property="Header" Value="{Binding DataContext.Title}" />
+    </Style>
+  </Window.Resources>-->
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <Button Content="Save" Margin="10" Command="{Binding ApplicationCommands.SaveCommand}"/>
+
+    <TabControl Grid.Row="1" Margin="10" prism:RegionManager.RegionName="ContentRegion" />
+  </Grid>
+</Window>

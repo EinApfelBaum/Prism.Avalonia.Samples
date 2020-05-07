@@ -1,0 +1,15 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com/"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             x:Class="ModuleA.Views.TabView">
+  <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+    <TextBlock Text="{Binding Text}" FontSize="18" Margin="5"/>
+    <CheckBox IsChecked="{Binding CanUpdate}" Content="Can Execute" Margin="5"/>
+    <Button Command="{Binding UpdateCommand}" Content="Save" Margin="5"/>
+    <TextBlock Text="{Binding UpdateText}" Margin="5"/>
+  </StackPanel>
+</UserControl>
