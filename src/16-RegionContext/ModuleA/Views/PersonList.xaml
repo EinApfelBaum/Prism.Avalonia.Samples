@@ -1,0 +1,16 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com/"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ModuleA.Views.PersonList"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+  <Grid x:Name="LayoutRoot" Background="White" Margin="10" RowDefinitions="100,Auto">
+    <ListBox x:Name="_listOfPeople" Items="{Binding People}"/>
+    <ContentControl Grid.Row="1" Margin="10"
+                    prism:RegionManager.RegionName="PersonDetailsRegion"
+                    prism:RegionManager.RegionContext="{Binding SelectedItem, ElementName=_listOfPeople}"
+                    />
+  </Grid>
+</UserControl>
