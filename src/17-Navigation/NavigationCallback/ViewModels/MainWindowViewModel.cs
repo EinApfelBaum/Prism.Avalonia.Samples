@@ -1,10 +1,10 @@
 ﻿using Avalonia;
-using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
 using System.Windows.Input;
+using Utilities.Dialogs;
 
 namespace NavigationCallback.ViewModels
 {
@@ -36,17 +36,8 @@ namespace NavigationCallback.ViewModels
         private void NavigateComplete(NavigationResult result)
         {
             var currentWindow = (Application.Current.ApplicationLifetime as IClassicDesktopStyleApplicationLifetime).MainWindow;
-            var position = new PixelPoint(currentWindow.Position.X + 50, currentWindow.Position.Y + 50);
-            Window window = new Window()
-            {
-                Height = 50,
-                Width = 250,
-                Position = position,
-                HorizontalContentAlignment = Avalonia.Layout.HorizontalAlignment.Center,
-                Content = $"Navigation to {result.Context.Uri} complete."
-            };
 
-            window.ShowDialog(currentWindow);
+            MessageBox.Show(currentWindow, $"Navigation to {result.Context.Uri} complete.", "Result", MessageBox.MessageBoxButtons.Ok);
         }
     }
 }

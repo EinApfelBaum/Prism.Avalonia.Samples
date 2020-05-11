@@ -29,7 +29,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Utilities\Utilities.csproj" />
-    <ProjectReference Include="..\ModuleA\ModuleA.csproj" />
+    <ProjectReference Include="..\ModuleD\ModuleD.csproj" />
   </ItemGroup>
 </Project>
