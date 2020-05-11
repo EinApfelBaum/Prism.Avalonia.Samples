@@ -1,0 +1,21 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:prism="http://prismlibrary.com/"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="NavigationParticipation.Views.MainWindow"
+	      Height="350" Width="525"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}">
+
+  
+  <DockPanel LastChildFill="True">
+    <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="5" >
+      <Button Command="{Binding NavigateCommand}" CommandParameter="ViewA" Margin="5">Navigate to View A</Button>
+      <Button Command="{Binding NavigateCommand}" CommandParameter="ViewB" Margin="5">Navigate to View B</Button>
+    </StackPanel>
+    <ContentControl prism:RegionManager.RegionName="ContentRegion" Margin="5"  />
+    <!--<TabControl prism:RegionManager.RegionName="ContentRegion" Margin="5"  />-->
+  </DockPanel>
+</Window>
