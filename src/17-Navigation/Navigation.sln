@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationToExistintgViews"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuleC", "ModuleC\ModuleC.csproj", "{774CEEAC-1674-4507-BB30-997B26363A0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassingParameters", "PassingParameters\PassingParameters.csproj", "{6A23B4D8-C430-48D9-A8A5-5E3A9FFCE7FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModulePerson", "PersonModul\ModulePerson.csproj", "{7FE904F1-4E66-4E6D-AB34-82A87DE7D579}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{774CEEAC-1674-4507-BB30-997B26363A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{774CEEAC-1674-4507-BB30-997B26363A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{774CEEAC-1674-4507-BB30-997B26363A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A23B4D8-C430-48D9-A8A5-5E3A9FFCE7FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A23B4D8-C430-48D9-A8A5-5E3A9FFCE7FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A23B4D8-C430-48D9-A8A5-5E3A9FFCE7FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A23B4D8-C430-48D9-A8A5-5E3A9FFCE7FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE904F1-4E66-4E6D-AB34-82A87DE7D579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE904F1-4E66-4E6D-AB34-82A87DE7D579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE904F1-4E66-4E6D-AB34-82A87DE7D579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE904F1-4E66-4E6D-AB34-82A87DE7D579}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

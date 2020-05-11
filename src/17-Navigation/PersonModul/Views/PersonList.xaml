@@ -1,0 +1,22 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:i="clr-namespace:Avalonia.Xaml.Interactivity;assembly=Avalonia.Xaml.Interactivity"
+             xmlns:ia="clr-namespace:Avalonia.Xaml.Interactions.Core;assembly=Avalonia.Xaml.Interactions"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ModulePerson.Views.PersonList"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+  <Grid x:Name="LayoutRoot" Background="White" Margin="10"
+        RowDefinitions="100,Auto">
+    <ListBox x:Name="_listOfPeople" Items="{Binding People}">
+      <i:Interaction.Behaviors>
+        <ia:EventTriggerBehavior EventName="SelectionChanged" SourceObject="{Binding #_listOfPeople}">
+          <ia:InvokeCommandAction Command="{Binding PersonSelectedCommand}" CommandParameter="{Binding #_listOfPeople.SelectedItem}"/>                      
+        </ia:EventTriggerBehavior>
+      </i:Interaction.Behaviors>
+    </ListBox>
+    <ContentControl Grid.Row="1" prism:RegionManager.RegionName="PersonDetailsRegion" Margin="10"/>
+  </Grid>
+</UserControl>
