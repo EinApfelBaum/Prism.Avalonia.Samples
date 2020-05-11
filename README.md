@@ -3,4 +3,8 @@ Some examples of the [Prism.Avalonia](https://github.com/AvaloniaCommunity/Prism
 
 Examples are based on these [WPF Examples](https://github.com/PrismLibrary/Prism-Samples-Wpf) from the [Prism Library](https://github.com/PrismLibrary) and demonstrate how to use Prism.Avalonia.
 
+Examples that do not work, because of some different behavoir in avalonia:
 
+Solution | Project | Note
+--- | --- | ---
+[Command.sln](https://github.com/EinApfelBaum/Prism.Avalonia.Samples/tree/master/src/11-Commands) | UsingCompositeCommands | No regions during module initialization
