@@ -7,4 +7,5 @@ Examples that do not work, because of some different behavoir in avalonia:
 
 Solution | Project | Note
 --- | --- | ---
-[Command.sln](https://github.com/EinApfelBaum/Prism.Avalonia.Samples/tree/master/src/11-Commands) | UsingCompositeCommands | No regions during module initialization
+[Command.sln](https://github.com/EinApfelBaum/Prism.Avalonia.Samples/tree/master/src/11-Commands) | UsingCompositeCommands & IActiveAwareCommands (missing) | No regions during module initialization
+[Navigation.sln](https://github.com/EinApfelBaum/Prism.Avalonia.Samples/tree/master/src/17-Navigation) | NavigationParticipation & NavigationToExistintgViews | TabControl with regions not working
